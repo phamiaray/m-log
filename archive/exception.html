@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no,address=no">
+  <title>スクリプト・ウォーズ “Exception” - m-log</title>
+  <meta name="description" content="This is just a game, just this is fun.">
+  <link rel="canonical" href="https://phamiaray.com/archive/exception">
+  <link rel="icon" href="/vault/icon/favicon.svg">
+  <link rel="apple-touch-icon" href="/vault/icon/apple-touch-icon.png">
+  <link rel="stylesheet" href="/vault/css/common.css">
+  <link rel="stylesheet" href="/vault/css/main0-3.css">
+  <link rel="stylesheet" href="/vault/css/main1-article.css">
+  <meta property="og:title" content="スクリプト・ウォーズ “Exception” - m-log">
+  <meta property="og:description" content="This is just a game, just this is fun.">
+  <meta property="og:url" content="https://phamiaray.com/archive/exception">
+  <meta property="og:image" content="https://phamiaray.com/vault/icon/card.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="m-log">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@phamiaray">
+  <meta name="msapplication-TileImage" content="https://phamiaray.com/vault/icon/card.png">
+  <meta name="msapplication-TileColor" content="#666666">
+</head>
+<body>
+  <header>
+    <div><a href="/">m-log</a></div>
+    <div>パズルゲーム感想アーカイブ</div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/about/">about</a></li>
+      <li><a href="/archive/">archive</a></li>
+      <li><a href="/contact/">contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <div><span>2022/01/15</span></div>
+      <h1>スクリプト・ウォーズ “Exception”</h1>
+      <!-- description --><p>This is just a game, just this is fun.</p>
+      <!-- rank: 2 -->
+      <!-- sort: Exception -->
+      <!-- tag: puzzle -->
+      <!-- alt:  -->
+      <!-- content --><div class="outer-pic video-pic"><iframe width="560" height="315" src="https://www.youtube.com/embed/cp3mPFnyoKo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><p>“Exception” と呼ばれるユニットが目的を遂行できるよう、適切にコードを並べプログラムを組み立てるというプログラミングをモチーフとしたパズル。<br>ユニットは複数動かすこともあるが、基本的にプログラムはユニットごとに独立したものを組むことができる。</p><p>“Exception” があるということは “Ordinary” もある。プレイヤーがカスタマイズできるユニットとは異常動作を引き起こした例外であり、そうではない普通のユニットは敵対ユニットとしてこちらのユニットの抹殺を狙ってくる。<br>ユニットの基本性能に差はないが軍勢は概ねプレイヤー側が不利なので、劣勢を覆すにはユニットの配置や性能を生かしての適切なプログラムの構築が求められる。<br>ユニット同士の殴り合いや警備網のすり抜けなど、その絵面は手続きがプログラミングのタワーディフェンスとも言える。</p><p>攻撃を主としたユニットのために構築されたからだろうか、このパズルにおけるユニットのプログラムを組み立てるためのシステム、コードの処理の仕方はかなり特殊である。<br>このシステムの最大の特徴は処理の完了を待たないことである。全ての行には命令欄だけでなく条件欄も用意されていて、コードは条件の合致を優先して読み進められる。<br>上から下へと単純な流れに従って書いたところで、その通りに全てが実行されるわけではない。処理の最中でも状況の変化によって条件の合致が変われば途中で別の処理が始まり、書き順を間違えれば条件がtrueでも命令は無視される。<br>さらにスクリプトは自動でループされる上break相当のコマンドがないため、慣れないうちは挙動の理解に苦しむことになる。</p><p>肝心の条件分岐は瞬間的な状況を見て判別することしかできず、ゆえに大勢の変化に応じた段階的な対応を行わせるのが難しくなっているのだが、これがパズルとしての枠組になっている。つまり問題の状況からどう条件を分岐させそれを保たせるか、そして制限されたコマンドだけでいかにして条件分岐を作るかが問われる。<br>ユニットの動きは乱数による多少の誤差があるため全ての試行が同じ結果になるわけではないというばらつきもあり、起こりうる可能性全てに細かく対応させようとなるとプログラムはいとも簡単に冗長になってしまう。<br>潰すべき数点だけを重点的に攻めて試行回数にものを言わせるだけでも一応解けるが、汎用性のある賢いユニットとは言えない。</p><p>無駄な行を削りかつ成功率を高めたシステムを探っていくと、大きな課題として優先順位の利用の仕方が浮かび上がる。行の順番と条件の並べ方を工夫するだけで、短い行数でも違う状況で例外的にかつての状況向けの行動を取らせるといったことができるようになる。<br>この優先順位を考えながら組むというのが非常に楽しいものだった。このゲームは問題ごとにコードの行数と目的達成までにかかった時間を測っているが評価制度は存在しない。にもかかわらず自発的にリファクタリングに勤しめたという点で、このパズルはとても面白い作品だったと言える。</p><p>しかしながら、心の底から良作と呼ぶには難しい気持ちにさせる欠点があるのも事実である。<br>全30問とただでさえ少ないが、全てのコマンドが解禁されるのは20問目からである。このパズルを楽しむにはあまりに短い。<br>また、乱数による誤差は偏ることでおかしな状況を生んでしまうもので、絶対の成功を保証しようとするほど馬鹿馬鹿しい例外処理が入る一方、当然悪用もできてしまうわけで、ごく限られた状況を狙った恐ろしく短いコードで済ませることも可能である。この現実を見せつけられるとエレガントなコードの探求も虚しくなってしまう。</p><p>まとめるには難しい限られた条件しかないからこそうまくまとめられると気持ちいいのだが、意図して作った面白さかどうかは微妙なところである。<br>このパズルがより発展すればストラテジーになるだろう。視界の共有やユニットの役割分離など、ただの一発芸で終わって生かしきれていなかった要素が色々と存在する。<br>だけどそうしたら、条件を制限していられなくなって、リファクタリングの面白さは失われるんだろうなあ……。</p>
+    </article>
+    <div>
+      <a href="/archive/qb-planets">&lt;</a>
+      <a href="/">Home</a>
+      <a href="/archive/quadline">&gt;</a>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; Miyagi</span>
+  </footer>
+</body>
+</html>

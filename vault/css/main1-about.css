@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+article h2 {
+  margin-top: 32px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+article p {
+  margin: 16px 0;
+}
+
+article dl {
+  margin: 16px 0;
+}
+
+article dt {
+  line-height: 1.5;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--a-color);
+}
+
+article dt:has(a:hover) {
+  text-decoration-color: var(--a-hover-color);
+}
+
+article dt a {
+  font-size: 20px;
+}
+
+article dt a,
+article dt a:visited {
+  text-decoration: none;
+  color: var(--a-color);
+}
+
+article dt a:hover {
+  text-decoration: none;
+  color: var(--a-hover-color);
+}
+
+article dd {
+  margin: 4px 0 16px;
+}
+
+article > div {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+}
+
+article > div h2 {
+  margin: 0 6px 0 0;
+}
+
+article > div a {
+  width: 20px;
+  height: 20px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+article > div a:nth-child(2) {
+  mask-image: url(/vault/img/about/logo.svg);
+  background-color: black;
+}
+
+article > div a:nth-child(3) {
+  mask-image: url(/vault/img/about/logo-black.svg);
+  background-color: #6364FF;
+}
+
+article > div a:hover {
+  background-color: var(--a-hover-color);
+}
+
+article > h1 + *,
+article > h2 + *,
+article > div + * {
+  margin-top: 8px;
+}

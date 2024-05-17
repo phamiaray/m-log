@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* first child */
+main > article {
+  padding: 8px 0;
+}
+
+article > div:first-child {
+  margin: 0 -10px;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+article > div:first-child span {
+  padding: 0 6px 0 10px;
+  color: var(--date-color);
+  border-bottom: 1px solid var(--date-color);
+}
+
+article h1 {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--title-color);
+}
+
+/* last child */
+main > div:last-child {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+main > div:last-child a {
+  padding: 8px 0;
+  width: calc(100% / 6);
+  display: block;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+main > div:last-child a:nth-child(2) {
+  width: calc(100% / 3);
+}
+
+main > div:last-child a,
+main > div:last-child a:hover,
+main > div:last-child a:visited {
+  text-decoration: none;
+  color: var(--color);
+}
+
+main > div:last-child a.empty-pager {
+  color: var(--border-color);
+}
+
+main > div:last-child a:hover {
+  background-color: var(--menu-background-color);
+}
+
+main > div:last-child a.empty-pager:hover {
+  background-color: transparent;
+}

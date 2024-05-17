@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* first child */
+main > article {
+  padding: 8px 0;
+}
+
+article h1 {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--title-color);
+}
+
+/* last child */
+main > div:last-child {
+  width: 30%;
+  text-align: center;
+}
+
+main > div:last-child a {
+  padding: 8px 0;
+  width: 100%;
+  display: block;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+main > div:last-child a,
+main > div:last-child a:hover,
+main > div:last-child a:visited {
+  text-decoration: none;
+  color: var(--color);
+}
+
+main > div:last-child a:hover {
+  background-color: var(--menu-background-color);
+}

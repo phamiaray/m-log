@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no,address=no">
+  <title>奴隷の奴隷による奴隷のためのタスク “Human Resource Machine” - m-log</title>
+  <meta name="description" content="プログラミング経験の深さによって、賛否に大きく関わりはせずとも、どの側面から意見が出るかが大きく分かれるであろうパズル。ちなみにマヌケのプログラミング経験は簡単なスクリプトやマクロを書いたり、平易な構造の問題のソルバーを作ったりといった単純なものである。">
+  <link rel="canonical" href="https://phamiaray.com/archive/human-resource-machine">
+  <link rel="icon" href="/vault/icon/favicon.svg">
+  <link rel="apple-touch-icon" href="/vault/icon/apple-touch-icon.png">
+  <link rel="stylesheet" href="/vault/css/common.css">
+  <link rel="stylesheet" href="/vault/css/main0-3.css">
+  <link rel="stylesheet" href="/vault/css/main1-article.css">
+  <meta property="og:title" content="奴隷の奴隷による奴隷のためのタスク “Human Resource Machine” - m-log">
+  <meta property="og:description" content="プログラミング経験の深さによって、賛否に大きく関わりはせずとも、どの側面から意見が出るかが大きく分かれるであろうパズル。ちなみにマヌケのプログラミング経験は簡単なスクリプトやマクロを書いたり、平易な構造の問題のソルバーを作ったりといった単純なものである。">
+  <meta property="og:url" content="https://phamiaray.com/archive/human-resource-machine">
+  <meta property="og:image" content="https://phamiaray.com/vault/icon/card.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="m-log">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@phamiaray">
+  <meta name="msapplication-TileImage" content="https://phamiaray.com/vault/icon/card.png">
+  <meta name="msapplication-TileColor" content="#666666">
+</head>
+<body>
+  <header>
+    <div><a href="/">m-log</a></div>
+    <div>パズルゲーム感想アーカイブ</div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/about/">about</a></li>
+      <li><a href="/archive/">archive</a></li>
+      <li><a href="/contact/">contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <div><span>2019/11/23</span></div>
+      <h1>奴隷の奴隷による奴隷のためのタスク “Human Resource Machine”</h1>
+      <!-- description --><p>プログラミング経験の深さによって、賛否に大きく関わりはせずとも、どの側面から意見が出るかが大きく分かれるであろうパズル。<br>ちなみにマヌケのプログラミング経験は簡単なスクリプトやマクロを書いたり、平易な構造の問題のソルバーを作ったりといった単純なものである。</p>
+      <!-- rank: 1 -->
+      <!-- sort: HumanResourceMachine -->
+      <!-- tag: puzzle good-puzzle -->
+      <!-- alt:  -->
+      <!-- content --><div class="outer-pic video-pic"><iframe width="560" height="315" src="https://www.youtube.com/embed/428R_oEjGGI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><p>与えられたデータに対して処理を行い、適切な結果を返すためのコードを書くというまさにプログラミングそのものとも言えるパズル。<br>プログラミングと一口に言っても目的や扱うデータ、処理する内容や言語によって様々だが、このパズルで取り扱うプログラミングは配列に対して処理を加え、その結果を正しく出力するためのコードを書くという代表的なものである。</p><p>プログラミングをパズルゲームに落とし込むためか、はたまた見た目の複雑さから食わず嫌いされやすいプログラミングというものに触れるハードルを下げるためか、このパズルのプログラミングはあらゆるものが簡略化されている。使えるコマンドは全部で20にも満たないほど削られていて、そしてそれらは全てが1列1個のブロックになっているので書式を気にする必要は全くなく、そして配列はアルファベット1文字を値に持つ文字列または整数値の配列に限られるので、あらゆる型を想定した複雑な条件分岐や例外処理などを考える必要もない。</p><p>実際、このパズルで使えるコマンドはデータの読み込み、一時的な格納、出力、そして足し算と引き算、動作をループさせるための位置指定に、ゼロか否か、または負の値か否かで判断するたった二つの条件分岐だけである。<br>リアルなプログラミングを大枠として、わずかなコマンドでいかにして複雑な処理を実現するかがこのパズルの設計思想となっている。</p><p>このパズルの難しさは今まさに掴んでいるデータそのものを直接判別できないことにある。<br>例えば、このパズルでは足し算はできても掛け算はできない。常識的な人間ならば掛け算せよという命令に対して4と3を与えられれば秒で12と計算できるが、それは掛け算という演算の意味と、4と3の数字を理解できるからである。もしもこの二つの数字が隠されていたらどうやってそれがそれぞれ4と3であると見分けられるだろうか？<br>機械に入力をどうやって理解させるかというのは、実はプログラミングの原始的な部分である。そしてそんな原始的なことを要求する低級言語にもかかわらず、乗算除算、果てはソートや素因数分解までできるようになる。限られたコマンドだけで多様な表現が可能であるという事実には目から鱗である。</p><p>しかしながら、限られたコマンドで最大限の表現を行うというこのパズルの面白さは、同時にプログラミングの観点からは欠点になってしまう。<br>難しさの源泉はコマンドの種類を極限まで絞ったことにあるので、その代替表現が出揃ってしまえばあとはその応用でしかなくなる。<br>また、コマンドを絞ることで可読性が犠牲になってしまっていて、複雑なことを要求するほどいわゆるスパゲッティコードが出来上がりやすいという明確な欠点もある。問題の解決方法を探るのは面白くても、実際にそれを清書するのは見た目にもわかりにくく面倒である。<br>いくら表現に幅があるといっても、パズルとして面白く解ける範囲の限界はこれ以上にないだろう。</p><p>とはいえ、プログラミングという難しいものであるとの思い込みを持たれやすい題材 (まあ実際難しいのだけど) に対して、簡略化したモデルに再構築し、そのシンプルな内容で奥深さを最大限に引き出しているのは間違いない。</p><blockquote cite="https://tomorrowcorporation.com/humanresourcemachine"><p class="en-quote">If you strip away all the 1's and 0's and scary squiggly brackets, programming is actually simple, logical, beautiful, and something that anyone can understand and have fun with!</p></blockquote><p>以上はストアの作品概要からの引用だが、前半はともかく、後半の意見には私も同意である。文法を覚え実際に処理の流れを把握できてしまいさえすれば、あれやこれやの複雑な処理をまるで魔法使いになったかのようにさくっと解決できるようになる。フィクションの魔法使いがそうであるように、難しいことほど呪文も複雑だが、それを論理的に、エレガントに整理し処理できた時の気持ちよさはひとしおである。</p><p>ちなみにこの作品は、海外産インディーゲームにしては珍しく翻訳ではなくローカライズがされた作品でもある。担当者の丁寧な仕事によってほんのり日本色のアレンジがされた上司との会話内容は原語版とはまた違った面白さがある。<br>間違えた結果を出力する度に上司はキレるが、どんなに怒らせたって評定が下がることは一切ないし、彼らは自分たちの仕事に最後まで付き合ってくれる。</p><p>経験不問の愉快な職場は驚きと楽しみに満ちていた。業務内容は大変なものだったが、無事に定年退職できたのは社風のおかげである。</p><h2>関連項目</h2><h3>シリーズ作品</h3><ul><li><a href="/archive/7-billion-humans">7 Billion Humans</a></li></ul><h3>同制作者による他作品の感想アーカイブ</h3><ul><li><a href="/archive/world-of-goo">World of Goo</a></li></ul>
+    </article>
+    <div>
+      <a href="/archive/triz">&lt;</a>
+      <a href="/">Home</a>
+      <a href="/archive/furdemption">&gt;</a>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; Miyagi</span>
+  </footer>
+</body>
+</html>

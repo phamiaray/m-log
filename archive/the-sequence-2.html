@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no,address=no">
+  <title>ミニマルスペース・オートマトン “the Sequence [2]” - m-log</title>
+  <meta name="description" content="できることは多いのに、スペースが足りない。ああ、なんてもどかしい！">
+  <link rel="canonical" href="https://phamiaray.com/archive/the-sequence-2">
+  <link rel="icon" href="/vault/icon/favicon.svg">
+  <link rel="apple-touch-icon" href="/vault/icon/apple-touch-icon.png">
+  <link rel="stylesheet" href="/vault/css/common.css">
+  <link rel="stylesheet" href="/vault/css/main0-3.css">
+  <link rel="stylesheet" href="/vault/css/main1-article.css">
+  <meta property="og:title" content="ミニマルスペース・オートマトン “the Sequence [2]” - m-log">
+  <meta property="og:description" content="できることは多いのに、スペースが足りない。ああ、なんてもどかしい！">
+  <meta property="og:url" content="https://phamiaray.com/archive/the-sequence-2">
+  <meta property="og:image" content="https://phamiaray.com/vault/icon/card.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="m-log">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@phamiaray">
+  <meta name="msapplication-TileImage" content="https://phamiaray.com/vault/icon/card.png">
+  <meta name="msapplication-TileColor" content="#666666">
+</head>
+<body>
+  <header>
+    <div><a href="/">m-log</a></div>
+    <div>パズルゲーム感想アーカイブ</div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/about/">about</a></li>
+      <li><a href="/archive/">archive</a></li>
+      <li><a href="/contact/">contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <div><span>2019/04/03</span></div>
+      <h1>ミニマルスペース・オートマトン “the Sequence [2]”</h1>
+      <!-- description --><p>できることは多いのに、スペースが足りない。<br>ああ、なんてもどかしい！</p>
+      <!-- rank: 1 -->
+      <!-- sort: theSequence2 -->
+      <!-- tag: puzzle good-puzzle -->
+      <!-- alt:  -->
+      <!-- content --><div class="outer-pic video-pic"><iframe width="560" height="315" src="https://www.youtube.com/embed/-r6vqqVQeH4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><p>指定の場所までバイナリが滞りなく流れるようにモジュールを組むパズル [the Sequence] の2作目。<br>ルールに追加・変更点は色々あるものの、スタートからゴールまでの一連の流れ、すなわちシーケンスを構築するパズルであるという本質的なルールに変わりはない。</p><p>前作におけるレベルデザインの設計思想は、広い盤面に必要最小限のモジュールと障害物を用意することで、少ない手段で多くの事柄を同時に解決する方法を問うというものだったが、今作ではモジュールに制限を設けない代わりに盤面の余白を絞っていて、限られた空間で多くの事柄を同時に解決する方法を問うという前作とは真逆の作りとなっている。<br>前作におけるSandbox問題集に近いが、今作にSandboxと呼べるほどの空間の自由は存在しない。</p><p>そして、今作の最大の特徴は運ぶべきバイナリがベクトルデータとなったことだろう。それに合わせてバイナリの加工という要素が加わり、ゴール地点も複数存在するようになった。合わせなければならないパラメータが増えたので、これらを同時に解決するシーケンスの構築が求められる。<br>前作では大して目立たなかった回転のモジュールだが、盤面の最小単位が六角形になったこともあり、今作では重要なモジュールに昇格した。</p><p>設計思想が逆転した今作だが、レベルデザインが練られたものであること自体は今作でも変わりない。だが、プレイ体験で得られる満足感は全く別のものとなっている。<br>ただクリアするだけならば、実は前作ほど難しくはない。解決すべき事柄と盤面の形状を照らし合わせていくと、モジュールの種類と数に反して取れる手立てがそもそも大して多くはないからだ。<br>これは盤面の形状で制限をかける今作のレベルデザインの設計思想によるものである。問題によっては形状そのものがヒントとなり得ることもある。<br>狭い盤面に穴埋め問題のごとくモジュールを当て嵌める感覚なので、自力で思い至ったというよりも誘導されたかのような感覚が強い。限られたモジュールで大きな結果を得られた時の驚きも弱ければ、問題自体がエレガントに作られている印象も弱い。</p><p>しかしながら、スコアを減らそうとすると途端にこのパズルは様変わりする。<br>このパズルは使用モジュール数でスコアを付けているのだが、少ないモジュールでぴたりと嵌まるシーケンスを構築するのに必要なのはわかりやすい形を崩しての思考であり、盤面から類推して導き出した解答はほとんど役に立たなくなる。周期に合わせて流れが方々に分岐したり巡回したり堰ができたりと、模範解答から外れた様々な形のシーケンスを検討する必要がある。<br>ベクトルデータとなったバイナリと、スイッチによる2nの周期と回転による6nの周期とを合わせての計算は生やさしいものではない。そもそもモジュールを減らせる可能性があるのかどうかの保証もないまま、ただひたすら思考と演算と実践を繰り返すしかない。<br>このパズルの果てに存在するのは、少しの発想力と底なしの泥臭さでささやかな達成感を得るという、探究の苦しみと喜びそのものである。</p><p>とはいえ、高スコアのシーケンスが苦労に見合った美しい構造かといえば必ずしもそうではない。<br>モジュール数自体は少ないものの本流から長い周期と準備をもって掠め取っていくシーケンスや、プリセットのバイナリを時間をかけて再構築するシーケンスなどといったひねくれた遠回りは、解決すべき事柄に対しての解答としてスマートかと問われると素直に頷けない。<br>クリアまでにかかったターン数を競うスピード部門のスコアもあればエレガントな正解を出せたことへの達成感も深まっていたかもしれない。それはそれでまた果てがなさそうではあるが。</p><p>シーケンスの最適化の追究は間違いなく達成感のあることではあったが、明確な指標もないまま総スコアを競わせる構造になっているこのパズルは、パズルの奴隷たるマヌケにとっては非常につらいものだった。ただでさえ手数を詰める行為が苦手なのに、解けどもそれが最小なのかは考え出せばきりがない。<br>結局、自力ではこれ以上詰められないと自分を納得させられるまで解き直すことで一応の終わりの目処として、その結果初見プレイ時のスコアは1185で決着した。今現在は1206まで伸びているが、これはスコアを減らせる問題についての外部ヒントを得た結果なので独力ではない。<br>ちなみに制作者は問題ごとに<a href="http://ombgames.com/?p=196">模範解答</a>を用意していて、そのスコアを合計すると1050になるので、何らかの指標を必要とするならばとりあえずこのスコアを参考にされたい。マヌケのようにゴールを見失って愚直に根を詰める必要はないのだ。</p><details><summary>マヌケのスコア一覧</summary><p>スクリーンショットを単純に繋ぎ合わせただけのクリア図に代えさせてもらう。例によって非常に大きな画像なので開く際は注意。</p><div class="outer-pic wide-pic"><a href="/vault/img/archive/the-sequence-2_1raw.jpg"><img src="/vault/img/archive/the-sequence-2_1.jpg" alt=""></a></div></details><p>パズルとして好きなのは前作だが、ゲームとしてパズルの奴隷に効く達成感を得られるのは今作のほうだろう。<br>それにしても、こうしてスコアで順位の付く作品と向かい合うと、私がいかに競争を嫌っているかがまざまざと浮かび上がってくる。<br>自分がどれだけ愚かなマヌケであるかが視覚化されるというのはあまり向き合いたくないものだが、競争というものがゲームをゲームたらしめる大きな因子である以上、この先もきっと避けて通ることはできないのだろう。</p><h2>関連項目</h2><h3>Best Foods to Boost Your Brain収録作品</h3><ul><li><a href="/archive/the-sequence">[the Sequence]</a></li><li><a href="/archive/unit-404">Unit 404</a></li></ul>
+    </article>
+    <div>
+      <a href="/archive/pipe-push-paradise">&lt;</a>
+      <a href="/">Home</a>
+      <a href="/archive/the-sequence">&gt;</a>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; Miyagi</span>
+  </footer>
+</body>
+</html>

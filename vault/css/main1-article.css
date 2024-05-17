@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+article h2 {
+  margin-top: 32px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+article h3 {
+  margin-top: 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+article p {
+  margin: 16px 0;
+}
+
+article a {
+  text-decoration: none;
+  color: var(--a-color);
+}
+
+article a:hover {
+  text-decoration: underline;
+  color: var(--a-hover-color);
+}
+
+article a:visited {
+  text-decoration: none;
+  color: var(--a-visited-color);
+}
+
+article blockquote {
+  margin: 16px auto;
+  width: 80%;
+  margin-inline: auto;
+  max-inline-size: max-content;
+}
+
+article blockquote p {
+  margin: 8px 0;
+}
+
+article blockquote p:first-child {
+  margin-top: 0;
+}
+
+article blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+article blockquote p.en-quote {
+  text-indent: -5px;
+}
+
+article blockquote p.ja-quote {
+  text-indent: -16px;
+}
+
+article blockquote,
+article q {
+  font-style: italic;
+}
+
+article .en-quote::before {
+  content: "“";
+}
+
+article .en-quote::after {
+  content: "”";
+}
+
+article .ja-quote::before {
+  content: "「";
+}
+
+article .ja-quote::after {
+  content: "」";
+}
+
+article ul {
+  margin: 16px 0;
+  padding-left: 32px;
+  list-style: disc;
+}
+
+article li {
+  margin: 4px 0;
+}
+
+article details {
+  margin: 16px 0 16px 16px;
+}
+
+article summary {
+  margin-left: -16px;
+  padding-left: 16px;
+  line-height: 1.5;
+  text-indent: -16px;
+}
+
+article img,
+article svg,
+article iframe {
+  vertical-align: bottom;
+}
+
+/* pic */
+article .outer-pic {
+  margin: 16px 0;
+  text-align: center;
+}
+
+article .block-pic {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+article .block-pic * {
+  max-width: 100%;
+}
+
+article .flex-pic {
+  display: flex;
+  justify-content: space-between;
+}
+
+article .split1-pic {
+  width: 100%;
+}
+
+article .split2-pic {
+  width: 50%;
+}
+
+article .split3-pic {
+  width: calc(100% / 3);
+}
+
+article .video-pic,
+article .ratio1-pic {
+  aspect-ratio: 16 / 9;
+}
+
+article .ratio2-pic {
+  aspect-ratio: 8 / 9;
+}
+
+article .ratio3-pic {
+  aspect-ratio: 16 / 27;
+}
+
+article .caption-pic {
+  margin: 8px auto 0;
+  width: 80%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+article .wide-pic img,
+article .wide-pic svg {
+  width: 100%;
+  height: auto;
+}
+
+article .narrow-pic img,
+article .narrow-pic svg {
+  width: auto;
+  height: 100%;
+}
+
+article .video-pic iframe {
+  width: 100%;
+  height: 100%;
+}
+
+article .overlay-pic {
+  position: relative;
+}
+
+article .overlay-pic img,
+article .overlay-pic svg {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* important order */
+article h1 + *,
+article h2 + *,
+article h3 + *,
+article summary + * {
+  margin-top: 8px;
+}

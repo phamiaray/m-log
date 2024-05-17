@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Meiryo";
+  src: local("Meiryo");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --color: #000000;
+  --background-color: #ffffff;
+  --main-color: #444444;
+  --date-color: #666666;
+  --title-color: #222222;
+  --footer-color: #aaaaaa;
+  --a-color: #2288bb;
+  --a-hover-color: #66ccff;
+  --a-visited-color: #888888;
+  --border-color: #cccccc;
+  --menu-background-color: #eeeeee;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Helvetica Neue", "Roboto", "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Meiryo", sans-serif;
+  color: var(--color);
+  background-color: var(--background-color);
+}
+
+header {
+  padding: 10px 30px;
+}
+
+header > :first-child {
+  margin: 6px 0;
+  line-height: 1.25;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+header > :last-child {
+  margin: 10px 0;
+}
+
+header a,
+header a:hover,
+header a:visited {
+  text-decoration: none;
+  color: var(--color);
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+nav li {
+  width: calc(100% / 3);
+}
+
+nav li:first-child {
+  border-right: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+nav li:last-child {
+  border-left: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+nav a {
+  padding: 8px 0;
+  display: block;
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+  text-decoration: none;
+  color: var(--color);
+}
+
+nav a:hover {
+  background-color: var(--menu-background-color);
+}
+
+main {
+  padding: 8px 10px;
+}
+
+main > :first-child {
+  margin: 8px 0;
+}
+
+main > :last-child {
+  margin: 8px auto;
+}
+
+article {
+  line-height: 1.875;
+  color: var(--main-color);
+}
+
+article .lang-zh {
+  font-family: "Helvetica Neue", "Roboto", "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+}
+
+footer {
+  padding: 60px 0 14px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--footer-color);
+}
