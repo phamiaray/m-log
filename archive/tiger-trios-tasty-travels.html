@@ -15,12 +15,12 @@
   <meta property="og:title" content="DX (どうぶつトランスフォーメーション) “とらきちのトラキッチン” - m-log">
   <meta property="og:description" content="……給仕を雇えばいいのでは？">
   <meta property="og:url" content="https://phamiaray.com/archive/tiger-trios-tasty-travels">
-  <meta property="og:image" content="https://phamiaray.com/vault/icon/card.png">
+  <meta property="og:image" content="https://phamiaray.com/vault/icon/image/tiger-trios-tasty-travels_0.jpg">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="m-log">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@phamiaray">
-  <meta name="msapplication-TileImage" content="https://phamiaray.com/vault/icon/card.png">
+  <meta name="msapplication-TileImage" content="https://phamiaray.com/vault/icon/image/tiger-trios-tasty-travels_0.jpg">
   <meta name="msapplication-TileColor" content="#666666">
 </head>
 <body>
@@ -44,7 +44,32 @@
       <!-- sort: とらきちのとらきっちん -->
       <!-- tag: puzzle -->
       <!-- alt:  -->
-      <!-- content --><div class="outer-pic video-pic"><iframe width="560" height="315" src="https://www.youtube.com/embed/9Goen-KG7kY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><p>お寿司のキッチンカーで世界を旅するトラの一家だが、彼らは注文システムに難を抱えていた。出来上がった料理を回転寿司のごとくいたずらにコンベアに流すだけで、お客の注文とうまく噛み合わない。<br>このゲームは、お客の注文通りの料理を流すべく、様々な仲間の力を借りてコンベアの流れを制御するパズルである。</p><p>流す料理と客の注文が固定されていて、料理が通るルートに仲間を配置して注文通りになるよう揃えていくという内容だが、その見た目はあみだくじをモチーフにしたプログラミングパズルである。<br>料理と客が配置された縦線を基本として、入れ替えを行う横線を入れることで軸を揃え、数量は縦線にのみ差し込めるコマンドで整えていく。<br>あみだくじは置換や全単射を説明するのにふさわしい数学的モデルだが、その性質の通り、通り道の重なりを作りにくくなっている。条件によって入れ替えを行う横線や任意の2点を一方通行で結ぶカエルなどによって対称性は簡単に崩壊するが、都合よく壊せるほどの利便性はない。<br>このパズルでは、共通処理の作りにくいシステムそのものが大きなねじれとなっている。</p><p>だが、ルールは複雑にすればするほど難しくなるわけではなく、難易度はある程度のところで頭打ちとなってしまう。基本的な解き方として、一纏めにしたのち条件で分離して個別処理を加えるという考え方が終始通るので、コスパチャレンジと称したコマンド数制限でしか悩むことはなかった。<br>解答のアプローチも全体的なフローを考えるというよりも、目的のために使えるラインを順に利用していくというもので、概ね目的ではなく手段としてあみだくじを使っているような感覚だった。<br>そして結果として仕上がるのは汎用性の欠片もない間に合わせのようなシステムばかりで、ゆえに達成感は薄い。</p><p>考えてみると、そもそもあみだくじとプログラミングの取り合わせがいいようには思えない。あみだくじらしさを出すほど処理は重なりにくくなり、処理が重なりやすいようにしようとすればあみだくじらしさはなくなっていく。<br>このパズルをさらに突き詰めるならば、あみだくじの置換の性質は利用すべきものよりも、回避すべきものとして立ちはだかるようになるのではないだろうか。<br>プログラミングパズルとしてもgoto構文に等しいカエルの採用ですでにスパゲティ屋への転身に片足を突っ込んでしまっている。<br>どのような形であれ、これ以上複雑にすれば途端にモチーフからの乖離は免れられないだろう。</p>
+      <!-- content -->
+      <div class="outer-pic video-pic">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Goen-KG7kY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p>
+        お寿司のキッチンカーで世界を旅するトラの一家だが、彼らは注文システムに難を抱えていた。出来上がった料理を回転寿司のごとくいたずらにコンベアに流すだけで、お客の注文とうまく噛み合わない。<br>
+        このゲームは、お客の注文通りの料理を流すべく、様々な仲間の力を借りてコンベアの流れを制御するパズルである。
+      </p>
+      <p>
+        流す料理と客の注文が固定されていて、料理が通るルートに仲間を配置して注文通りになるよう揃えていくという内容だが、その見た目はあみだくじをモチーフにしたプログラミングパズルである。<br>
+        料理と客が配置された縦線を基本として、入れ替えを行う横線を入れることで軸を揃え、数量は縦線にのみ差し込めるコマンドで整えていく。<br>
+        あみだくじは置換や全単射を説明するのにふさわしい数学的モデルだが、その性質の通り、通り道の重なりを作りにくくなっている。条件によって入れ替えを行う横線や任意の2点を一方通行で結ぶカエルなどによって対称性は簡単に崩壊するが、都合よく壊せるほどの利便性はない。<br>
+        このパズルでは、共通処理の作りにくいシステムそのものが大きなねじれとなっている。
+      </p>
+      <p>
+        だが、ルールは複雑にすればするほど難しくなるわけではなく、難易度はある程度のところで頭打ちとなってしまう。基本的な解き方として、一纏めにしたのち条件で分離して個別処理を加えるという考え方が終始通るので、コスパチャレンジと称したコマンド数制限でしか悩むことはなかった。<br>
+        解答のアプローチも全体的なフローを考えるというよりも、目的のために使えるラインを順に利用していくというもので、概ね目的ではなく手段としてあみだくじを使っているような感覚だった。<br>
+        そして結果として仕上がるのは汎用性の欠片もない間に合わせのようなシステムばかりで、ゆえに達成感は薄い。
+      </p>
+      <p>
+        考えてみると、そもそもあみだくじとプログラミングの取り合わせがいいようには思えない。あみだくじらしさを出すほど処理は重なりにくくなり、処理が重なりやすいようにしようとすればあみだくじらしさはなくなっていく。<br>
+        このパズルをさらに突き詰めるならば、あみだくじの置換の性質は利用すべきものよりも、回避すべきものとして立ちはだかるようになるのではないだろうか。<br>
+        プログラミングパズルとしてもgoto構文に等しいカエルの採用ですでにスパゲティ屋への転身に片足を突っ込んでしまっている。<br>
+        どのような形であれ、これ以上複雑にすれば途端にモチーフからの乖離は免れられないだろう。
+      </p>
+      <!-- /content -->
     </article>
     <div>
       <a href="/archive/arrog">&lt;</a>
