@@ -95,7 +95,7 @@ article details {
   margin: 16px 0 16px 16px;
 }
 
-article summary {
+details summary {
   margin-left: -16px;
   padding-left: 16px;
   line-height: 1.5;
@@ -105,28 +105,38 @@ article summary {
 article img,
 article svg,
 article iframe {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /* pic */
-article .outer-pic {
-  margin: 16px 0;
-  text-align: center;
-}
-
-article .block-pic {
+article figure {
   display: flex;
   flex-direction: column;
   overflow-wrap: break-word;
+  text-align: center;
 }
 
-article .block-pic * {
+article figure * {
   max-width: 100%;
 }
 
-article .flex-pic {
+figure figcaption {
+  margin: 8px auto 0;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+article .outer-tag {
+  margin: 16px 0;
+}
+
+article .flex-tag {
+  display: flex;
 }
 
 article .split1-pic {
@@ -141,7 +151,6 @@ article .split3-pic {
   width: calc(100% / 3);
 }
 
-article .video-pic,
 article .ratio1-pic {
   aspect-ratio: 16 / 9;
 }
@@ -152,17 +161,6 @@ article .ratio2-pic {
 
 article .ratio3-pic {
   aspect-ratio: 16 / 27;
-}
-
-article .caption-pic {
-  margin: 8px auto 0;
-  width: 80%;
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.5;
-  font-size: 14px;
 }
 
 article .wide-pic img,

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* first child */
-main > article {
+main article {
   padding: 8px 0;
 }
 
@@ -12,7 +12,7 @@ article > div:first-child {
   font-size: 12px;
 }
 
-article > div:first-child span {
+article > div:first-child time {
   padding: 0 6px 0 10px;
   color: var(--date-color);
   border-bottom: 1px solid var(--date-color);
@@ -27,14 +27,14 @@ article h1 {
 }
 
 /* last child */
-main > div:last-child {
+main nav {
   width: 90%;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-main > div:last-child a {
+main nav a {
   padding: 8px 0;
   width: calc(100% / 6);
   display: block;
@@ -42,25 +42,21 @@ main > div:last-child a {
   box-sizing: border-box;
 }
 
-main > div:last-child a:nth-child(2) {
+main nav a:nth-child(2) {
   width: calc(100% / 3);
 }
 
-main > div:last-child a,
-main > div:last-child a:hover,
-main > div:last-child a:visited {
+main nav a,
+main nav a:hover,
+main nav a:visited {
   text-decoration: none;
   color: var(--color);
 }
 
-main > div:last-child a.empty-pager {
+main nav a.empty-pager {
   color: var(--border-color);
 }
 
-main > div:last-child a:hover {
+main nav a:not(.empty-pager):hover {
   background-color: var(--menu-background-color);
-}
-
-main > div:last-child a.empty-pager:hover {
-  background-color: transparent;
 }

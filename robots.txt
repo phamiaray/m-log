@@ -1,0 +1,4 @@
+user-agent: *
+disallow: /404.html
+
+sitemap: https://phamiaray.com/sitemap.xml

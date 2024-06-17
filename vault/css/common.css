@@ -36,29 +36,29 @@ body {
   background-color: var(--background-color);
 }
 
-header {
+body > header {
   padding: 10px 30px;
 }
 
-header > :first-child {
+body > header > :first-child {
   margin: 6px 0;
   line-height: 1.25;
   font-size: 40px;
   font-weight: normal;
 }
 
-header > :last-child {
+body > header > :last-child {
   margin: 10px 0;
 }
 
-header a,
-header a:hover,
-header a:visited {
+body > header a,
+body > header a:hover,
+body > header a:visited {
   text-decoration: none;
   color: var(--color);
 }
 
-nav ul {
+body > nav ul {
   width: 100%;
   display: flex;
   list-style: none;
@@ -67,33 +67,33 @@ nav ul {
   box-sizing: border-box;
 }
 
-nav li {
+body > nav li {
   width: calc(100% / 3);
 }
 
-nav li:first-child {
+body > nav li:first-child {
   border-right: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
-nav li:last-child {
+body > nav li:last-child {
   border-left: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
-nav a {
+body > nav a {
   padding: 8px 0;
   display: block;
 }
 
-nav a,
-nav a:hover,
-nav a:visited {
+body > nav a,
+body > nav a:hover,
+body > nav a:visited {
   text-decoration: none;
   color: var(--color);
 }
 
-nav a:hover {
+body > nav a:hover {
   background-color: var(--menu-background-color);
 }
 
@@ -118,7 +118,7 @@ article .lang-zh {
   font-family: "Helvetica Neue", "Roboto", "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
 }
 
-footer {
+body > footer {
   padding: 60px 0 14px;
   text-align: center;
   font-size: 12px;

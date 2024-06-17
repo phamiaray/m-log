@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* first child */
-main > article {
+main article {
   padding: 8px 0;
 }
 
@@ -14,12 +14,12 @@ article h1 {
 }
 
 /* last child */
-main > div:last-child {
+main nav {
   width: 30%;
   text-align: center;
 }
 
-main > div:last-child a {
+main nav a {
   padding: 8px 0;
   width: 100%;
   display: block;
@@ -27,13 +27,13 @@ main > div:last-child a {
   box-sizing: border-box;
 }
 
-main > div:last-child a,
-main > div:last-child a:hover,
-main > div:last-child a:visited {
+main nav a,
+main nav a:hover,
+main nav a:visited {
   text-decoration: none;
   color: var(--color);
 }
 
-main > div:last-child a:hover {
+main nav a:hover {
   background-color: var(--menu-background-color);
 }
